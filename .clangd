@@ -1,0 +1,16 @@
+CompileFlags:
+  Add: [-I${workspaceFolder}/_deps/raylib-src/src]
+
+CompileDatabase: ${workspaceFolder}/build
+
+Diagnostics:
+  ClangTidy:
+    Add: [-checks=*]
+
+FallbackFlags: [-std=c99]
+
+Index:
+  Background: Build
+
+HeaderExtensions:
+  Add: [h]

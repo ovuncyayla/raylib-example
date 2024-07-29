@@ -1,0 +1,14 @@
+local dap = require("dap")
+dap.configurations.c = {
+	{
+		name = "Launch with LLDB",
+		type = "lldb",
+		request = "launch",
+		program = vim.fn.getcwd() .. "/build/" .. "pongy",
+		cwd = "${workspaceFolder}",
+		stopAtBeginningOfMainSubprogram = false,
+		runInTerminal = true,
+	},
+}
+
+-- vim: ft=lua
